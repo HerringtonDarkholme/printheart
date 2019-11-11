@@ -57,5 +57,5 @@ function brush(selector, bg, fg) {
   }
 }
 
-brush('.brush2', 'img/lama.jpg', 'img/otter_cake.jpeg')
+brush('.brush2', 'img/lama_kai.jpg', 'img/otter_cake.jpeg')
 brush('.brush1', 'img/otter.jpeg', 'img/lama_gift.jpg')
