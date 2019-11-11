@@ -3,8 +3,9 @@ body {
   background: #020202;
   cursor: crosshair;
 }
-canvas{display:block}
-h1 {
+canvas{display:block; margin: auto;}
+h1.greeting {
+  pointer-events: none;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -16,4 +17,12 @@ h1 {
   -webkit-user-select: none;
   user-select: none;
   white-space: nowrap;
+}
+
+#code {
+  width: 414px;
+  margin: auto;
+  max-height: none;
+  font-size: 16px;
+  line-height: 18px;
 }

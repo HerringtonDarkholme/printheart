@@ -3,20 +3,66 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Happy Birthday Dabanban!</title>
+    <title>Happy Birthday, Caicai!</title>
+    <link rel="stylesheet" href="lib/reveal.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>
-      Happy B-day
-      <br/>
-      to Dabanban!
-    </h1>
-    <canvas id="birthday"></canvas>
-    <section class="brush">
-    </section>
-  <script src="https://pixijs.download/v5.1.2/pixi.min.js"></script>
-  <script src="brush.js"> </script>
-  <script src="birthday.js"> </script>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1 class="greeting">
+            Happy B-day
+            <br/>
+            to Dabanban!
+          </h1>
+          <canvas id="birthday"></canvas>
+        </section>
+        <section class="brush1">
+          <h3>Scratch Otter! Touch Image!</h3>
+        </section>
+        <section class="code">
+          <pre style="margin:0;width:100%;"><code data-trim data-noescape class="rust" id="code" data-line-numbers>
+
+fn main() {
+
+     let                mut
+   arr=[6,1,6,       6,6,1,6,1,
+ 0,1,0,1,0,1,1,     0,0,1,0,0,1,1,
+4,5,2,3,9,1,6,1,0,0,0,1,6,6,6,1,0,1,
+6,6,6,6,6,1,6,6,6,6,6,6,6,6,6,6];for
+(k,v )in arr.into_iter().enumerate()
+ {if(k%7==0){println!("");}match v {
+  6=>print!("{}"," ".repeat(3)),0=>
+   print!("***"),4=>print!("**"),5
+    => print!("I**"),2=> for &j in
+     [76,79,86,69].iter(){print!(
+      "{}", j as u8 as char);},
+       3=>{print!("YOU");},9
+        =>print!("*"),1=>
+          print!("***"),b
+            =>{();}}
+               };}
+          </code></pre>
+          <br/>
+          <a href="https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=770a462f8e6ecd64edbc03868f64a4f6" target="_blank">Run It Here!</a>
+        </section>
+        <section class="brush2">
+          <h3>Scratch Lamama! Touch Image!</h3>
+        </section>
+        <section>
+          <h3>Happy Birthday!</h3>
+          <img src="img/photo6217273183585806938.jpg" alt="sheepLoveDabanban"/>
+        </section>
+      </div>
+    </div>
+    <script src="lib/reveal.js"></script>
+    <script>Reveal.initialize({
+      width: '100%', height: '100%', margin: 0,
+      history: true, dependencies: [{ src: 'lib/highlight.js', async: true }],
+    });</script>
+    <script async src="birthday.js"> </script>
+    <script src="lib/pixi.js"></script>
+    <script src="brush.js"> </script>
   </body>
 </html>
