@@ -6,7 +6,7 @@ body {
   background: #020202;
   cursor: crosshair;
 }
-canvas{display:block; margin: auto;}
+canvas{display:block; margin: auto; max-width: 100%;}
 h1.greeting {
   font-family: 'Poiret One', Segoe UI Light, cursive;
   pointer-events: none;
